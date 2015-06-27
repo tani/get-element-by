@@ -1,12 +1,12 @@
 # Get-Element-By
 JavaScript like selector for cl-html-parse.
 ## Usage
-```
+```common-lisp
     (defvar tree (net.html.parser:parse-html string-of-html))
     (get-elements-by :tag-name :h1 tree)
-    (get-elements-by :id \"id0\" tree)
-    (get-elements-by :class \"class1\" tree)
-    (setf (getf (nth 2 (get-elements-by :class \"class1\" tree)) :class) \"class2\")
+    (get-elements-by :id "id0" tree)
+    (get-elements-by :class "class1" tree)
+    (setf (getf (nth 2 (get-elements-by :class "class1" tree)) :class) "class2")
 ```
 ## Installation
 1. `$ git clone git://github.com/ta2gch/get-element-by`
