@@ -1,10 +1,8 @@
+(in-package :cl-user)
 (defpackage get-element-by
-  (:use common-lisp)
-  (:nickname cl-html)
-  (:export get-elements-by
-	   get-element-by))
-
-(in-package get-element-by :use 'common-lisp)
+  (:use :cl)
+  (:export :get-element-by))
+(in-package :get-element-by)
 
 (defun get-elements-by (tag-name-or-attribute value body)
   "
@@ -35,3 +33,4 @@
 (defun get-element-by (tag-name-or-attribute value body)
   "Alias for `(car (get-elements-by ...))'"
   (car (get-elements-by tag-name-or-attribute value body)))
+
