@@ -10,7 +10,7 @@
 
 (defsystem get-element-by-test
   :author "Masaya TANIGUCHI"
-  :license ""
+  :license "BSD 2-Clause"
   :depends-on (:get-element-by
                :prove)
   :components ((:module "t"
