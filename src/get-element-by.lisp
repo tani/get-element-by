@@ -13,7 +13,7 @@
     (get-elements-by :tag-name :h1 tree)
     (get-elements-by :id \"id0\" tree)
     (get-elements-by :class \"class1\" tree)
-    (setf (getf (nth 2 (get-elements-by :class \"class1\" tree)) :class) \"class2\")
+    (setf (getf (cdr (nth 2 (get-elements-by :class \"class1\" tree))) :class) \"class2\")
   RETURN-TYPE:
     LIST
   "
