@@ -15,7 +15,7 @@
 (defsystem get-element-by
   :version "0.1"
   :author "Masaya TANIGUCHI"
-  :license "BSD 2-Clauses"
+  :license "BSD 2-Clause"
   :depends-on ()
   :components ((:module "src"
                 :components
