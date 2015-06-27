@@ -6,8 +6,8 @@
 
 (defun get-elements-by (tag-name-or-attribute value body)
   "
-  DESCRIBE:
-    getElementById like interface for cl-html-parser
+  DESCRIPTION:
+    JavaScript like selector for cl-html-parser
   USAGE:
     (defvar tree (net.html.parser:parse-html string-of-html))
     (get-elements-by :tag-name :h1 tree)

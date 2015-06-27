@@ -1,5 +1,5 @@
 # Get-Element-By
-getElementById like selector for cl-html-parse.
+JavaScript like selector for cl-html-parse.
 ## Usage
 ```
     (defvar tree (net.html.parser:parse-html string-of-html))
