@@ -1,7 +1,8 @@
 (in-package :cl-user)
 (defpackage get-element-by
   (:use :cl)
-  (:export :get-element-by))
+  (:export :get-element-by
+	   :get-elements-by))
 (in-package :get-element-by)
 
 (defun get-elements-by (tag-name-or-attribute value body)
