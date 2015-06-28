@@ -30,7 +30,7 @@
 		     (if (listp (car x))
 			 (string= (getf (cdar x) target)  value)
 			 (string= (getf (cdr x) target) value)))))
-        (labels ((get-elements-by-rec (body)
+    (labels ((get-elements-by-rec (body)
 	       (unless (or (not body) (atom body))
 		 (cond 
 		   ((and (listp (first body)) (member target (first body)))
@@ -40,7 +40,7 @@
 		    (push body elements)
 		    (mapcar #'get-elements-by-rec body))
 		   (t (mapcar #'get-elements-by-rec body))))))
-	  (get-elements-by-rec body))
+      (get-elements-by-rec body))
     (nreverse (delete-if-not test elements))))
 
 (defun get-element-by (tag-name-or-attribute value body)
