@@ -1,8 +1,8 @@
 (in-package :cl-user)
 (defpackage get-element-by
   (:use :cl)
-  (:export :get-element-by
-	   :get-elements-by))
+  (:nicknames :geby)
+  (:export  :get-element-by :get-elements-by))
 (in-package :get-element-by)
 
 (defun get-elements-by (tag-name-or-attribute value body)
@@ -22,18 +22,17 @@
     (if (eq tag-name-or-attribute :tag-name)
 	(setf target value
 	      test (lambda (x)
-		     (if (listp (car x))
-			 (eq (caar x) value)
-			 (eq (car x) value))))
+		     (or (eq (car x) value)
+			 (eq (caar x) value))))
 	(setf target tag-name-or-attribute
 	      test (lambda (x)
-		     (if (listp (car x))
-			 (string= (getf (cdar x) target)  value)
-			 (string= (getf (cdr x) target) value)))))
+		     (or (string= (getf (cdr x) target) value)
+			 (string= (getf (cdar x) target) value)))))
     (labels ((get-elements-by-rec (body)
 	       (unless (or (not body) (atom body))
 		 (cond 
-		   ((and (listp (first body)) (member target (first body)))
+		   ((and (listp (first body))
+			 (member target (first body)))
 		    (push body elements)
 		    (mapcar #'get-elements-by-rec (rest body)))
 		   ((member target body)
