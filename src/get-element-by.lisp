@@ -26,8 +26,9 @@
 			 (eq (caar x) value))))
 	(setf target tag-name-or-attribute
 	      test (lambda (x)
-		     (or (string= (getf (cdr x) target) value)
-			 (string= (getf (cdar x) target) value)))))
+		     (if (listp (car x))
+			 (string= (getf (cdar x) target) value)
+			 (string= (getf (cdr x) target) value)))))
     (labels ((get-elements-by-rec (body)
 	       (unless (or (not body) (atom body))
 		 (cond 
