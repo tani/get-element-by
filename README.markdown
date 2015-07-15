@@ -12,14 +12,10 @@ JavaScript like selector for cl-html-parse.
 (setf (getf (cdr (nth 2 (get-elements-by :class "class1" tree))) :class) "class2")
 ```
 ## Installation
-1. `$ git clone git://github.com/ta2gch/get-element-by`
-2. `$ cd get-element-by`
-3. `$ ln -s $PWD/get-element-by.asd ~/common-lisp/`
-
-## Author
-
-* Masaya TANIGUCHI (ta2gch@gmail.com)
-
+```
+$ cd ~/common-lisp
+$ git clone git://github.com/ta2gch/get-element-by
+```
 ## LICENCE
 BSD 2-Clause
 ## Copyright
