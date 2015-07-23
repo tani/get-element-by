@@ -1,5 +1,5 @@
 # Get-Element-By
-JavaScript like selector for cl-html-parse.
+JavaScript style selector for cl-html-parse.
 ## Usage
 ```common-lisp
 (defvar tree (net.html.parser:parse-html string-of-html))
