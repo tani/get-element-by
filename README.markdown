@@ -14,14 +14,14 @@ JavaScript style selector for cl-html-parse.
 ## Installation
 ```
 $ cd ~/common-lisp
-$ git clone git://github.com/ta2gch/get-element-by
+$ git clone git://github.com/asciian/get-element-by
 ```
 ## Author
-Masaya TANIGUCHI
+asciian
 
 ## LICENCE
 BSD 2-Clause
 
 ## Copyright
 
-Copyright (c) 2015 Masaya TANIGUCHI (ta2gch@gmail.com)
+Copyright (c) 2015 asciian (asciian@outlook.jp)

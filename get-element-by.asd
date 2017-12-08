@@ -1,10 +1,10 @@
 #|
   This file is a part of get-element-by project.
-  Copyright (c) 2015 Masaya TANIGUCHI (ta2gch@gmail.com)
+  Copyright (c) 2015 asciian (asciian@outlook.jp)
 |#
 
 #|
-  Author: Masaya TANIGUCHI (ta2gch@gmail.com)
+  Author: asciian (asciian@outlook.jp)
 |#
 
 (in-package :cl-user)
@@ -14,7 +14,7 @@
 
 (defsystem get-element-by
   :version "0.1"
-  :author "Masaya TANIGUCHI"
+  :author "asciian"
   :license "BSD 2-Clause"
   :depends-on ()
   :components ((:module "src"

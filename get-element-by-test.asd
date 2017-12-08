@@ -1,6 +1,6 @@
 #|
   This file is a part of get-element-by project.
-  Copyright (c) 2015 Masaya TANIGUCHI (ta2gch@gmail.com)
+  Copyright (c) 2015 asciian (asciian@outlook.jp)
 |#
 
 (in-package :cl-user)
@@ -9,7 +9,7 @@
 (in-package :get-element-by-test-asd)
 
 (defsystem get-element-by-test
-  :author "Masaya TANIGUCHI"
+  :author "asciian"
   :license "BSD 2-Clause"
   :depends-on (:get-element-by
                :prove)
